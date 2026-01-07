@@ -84,7 +84,7 @@ export function RoundEntry({
       <div className="grid gap-2 sm:grid-cols-2">
         {players.map((p) => (
           <div key={p.id} className="rounded-xl bg-[var(--surface)] p-3 ring-1 ring-[var(--border)]">
-            <div className="flex justify-between text-sm mb-1">
+            <div className="flex justify-between text-sm md:text-sm text-[16px] md:text-sm mb-1">
               <span>{p.name}</span>
               <span>Total: {totals[p.id] ?? 0}</span>
             </div>
@@ -103,7 +103,7 @@ export function RoundEntry({
                   [p.id]: digitsOnly === "" ? "" : String(Number(digitsOnly)), // entfernt führende Nullen
                 }));
               }}
-              className="w-full rounded-xl bg-[var(--surface2)] px-3 py-3 sm:py-2 text-sm text-[var(--text)]
+              className="w-full rounded-xl bg-[var(--surface2)] px-3 py-3 sm:py-2 text-base text-[var(--text)]
                 ring-1 ring-[var(--border)] placeholder:text-[var(--muted)]
                 focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
             />
@@ -116,7 +116,7 @@ export function RoundEntry({
           value={roundNote}
           onChange={(e) => setRoundNote(e.target.value)}
           placeholder="Notiz"
-          className="rounded-xl bg-[var(--surface2)] px-3 py-3 sm:py-2 text-sm text-[var(--text)]
+          className="rounded-xl bg-[var(--surface2)] px-3 py-3 sm:py-2 text-base text-[var(--text)]
           ring-1 ring-[var(--border)] placeholder:text-[var(--muted)]
           focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
         />

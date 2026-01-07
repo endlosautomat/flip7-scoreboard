@@ -83,7 +83,7 @@ export default function App() {
               <span className="text-sm font-black">F7</span>
             </div>
             <div className="leading-tight">
-              <div className="text-sm font-semibold">F7 Scoreboard</div>
+              <div className="text-sm font-semibold">F7 Scoreboard V0.8.1</div>
               <div className="text-xs text-[var(--muted)]">
                 {game.players.length} Spieler · {game.rounds.length} Runden
               </div>

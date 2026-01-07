@@ -106,7 +106,7 @@ export function PlayerPanel({
             value={newPlayerName}
             onChange={(e) => setNewPlayerName(e.target.value)}
             placeholder="Name"
-            className="w-full rounded-xl bg-[var(--surface2)] px-3 py-3 sm:py-2 text-sm text-[var(--text)]
+            className="w-full rounded-xl bg-[var(--surface2)] px-3 py-3 sm:py-2 text-base text-[var(--text)]
             ring-1 ring-[var(--border)] placeholder:text-[var(--muted)]
             focus:outline-none focus:ring-2 focus:ring-[var(--primary)]"
 
@@ -116,7 +116,7 @@ export function PlayerPanel({
               e.stopPropagation();
               addPlayer();
             }}
-            className="rounded-xl bg-[var(--primary)] px-4 py-3 sm:py-2 text-sm font-semibold text-[var(--bg)]
+            className="rounded-xl bg-[var(--primary)] px-4 py-3 sm:py-2 text-sm md:text-sm text-[16px] md:text-sm font-semibold text-[var(--bg)]
             hover:bg-[var(--primary-hover)] transition-colors"
 
           >
